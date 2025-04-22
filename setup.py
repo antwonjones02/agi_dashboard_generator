@@ -14,6 +14,14 @@ setup(
     author="AGI Dashboard Generator Team",
     packages=find_packages(),
     include_package_data=True,
+    py_modules=[
+        "main",
+        "dashboard_ui",
+        "file_monitor",
+        "data_analyzer",
+        "visualization_generator",
+        "openai_analyzer"
+    ],
     install_requires=[
         "pandas",
         "numpy",
@@ -30,7 +38,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "agi-dashboard-generator=src.main:main",
+            "agi-dashboard-generator=main:main",
         ],
     },
     classifiers=[

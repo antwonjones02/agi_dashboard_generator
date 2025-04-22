@@ -9,16 +9,20 @@ import os
 import sys
 import logging
 
-# Add parent directory to path to import other modules
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.dashboard_ui import DashboardApp
-
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger('AGI-Dashboard-Generator')
+
+# Add the current directory to the path to fix import issues
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
+# Import after path adjustment
+from dashboard_ui import DashboardApp
 
 def main():
     """Main entry point for the application."""
