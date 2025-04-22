@@ -1,0 +1,34 @@
+### Basic Workflow
+
+1. **Select Reports Folder**: Click "Browse..." to select a folder containing your reports
+2. **Configure Options**: 
+   - Select which file types to process
+   - Choose the analysis depth
+   - Enable/disable folder monitoring
+3. **Analyze Reports**: Click "Analyze Reports" to process the data and generate dashboards
+4. **View Dashboards**: Navigate through the generated dashboards in the dashboard viewer
+
+### Analysis Depth Options
+
+- **Basic**: Quick analysis with fundamental statistics and simple visualizations
+- **Standard**: Comprehensive analysis with correlations and more detailed visualizations
+- **Advanced**: In-depth analysis with advanced statistical methods and detailed insights
+
+## Dashboard Types
+
+The application generates several types of visualizations based on the data:
+
+- **Data Overview**: Summary of the dataset structure and characteristics
+- **Missing Values**: Analysis of missing data points
+- **Numeric Distribution**: Distribution and statistics for numeric columns
+- **Categorical Distribution**: Distribution of categorical values
+- **Correlations**: Heatmap showing relationships between numeric columns
+- **Time Series**: Trends over time for date-based data
+
+## Customization
+
+The application is designed to be extensible. You can customize:
+
+- The types of visualizations generated
+- The analysis algorithms used
+- The dashboard layout and design
